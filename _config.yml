@@ -36,9 +36,6 @@ defaults:
     values:
       layout: "default"
 
-sass:
-    sass_dir: assets/css
-
 # Build settings
 # Exclude from processing.
 # The following items will not be processed, by default.
