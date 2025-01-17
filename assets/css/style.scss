@@ -1,7 +1,69 @@
 ---
 ---
 
-.item-table {
-  margin: auto;
-  width: 40%;
+q {
+  color: black;
+}
+
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+
+$nav-link-normal: #ffffffb0;
+$nav-link-hover: #ffffff;
+
+h1 {
+  text-align: center;
+}
+
+.my-text {
+  color: var(--bs-secondary-color);
+  text-align: center;
+}
+
+.navbar {
+  background: linear-gradient(-45deg, #a53a55, #3942c0);
+  background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-brand-hover-color: $nav-link-hover;
+}
+
+.navbar-brand {
+  color: $nav-link-normal;
+}
+
+.navbar-brand:hover {
+  color: $nav-link-hover;
+  text-shadow: $nav-link-normal 1px 0 10px;
+}
+
+.nav-link {
+  color: $nav-link-normal;
+}
+
+.nav-link:hover {
+  color: $nav-link-hover;
+  text-shadow: $nav-link-normal 1px 0 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(-45deg, #a53a55, #3942c0);
+  background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
 }
