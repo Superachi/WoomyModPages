@@ -1,0 +1,12 @@
+<td class="td-mod-item">
+  <img class="image" src="{{ site.baseurl }}/assets/images/Items/Weapons/{{ include.image_uri }}.png" style="margin-right: 20px;">
+  {% if include.category_uri == "" %}
+    <a href="{{ site.baseurl }}/pages/item_categories/{{ include.name }}">
+      {{ include.name }}
+    </a>
+  {% else %}
+    <a href="{{ site.baseurl }}/pages/item_categories/{{ include.category_uri }}">
+      {{ include.name }}
+    </a>
+  {% endif %}
+</td>

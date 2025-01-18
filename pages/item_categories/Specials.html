@@ -1,0 +1,24 @@
+---
+layout: category-page
+---
+
+<div class="card-header">
+  <div class="col"><b>Specials</b></div>
+</div>
+
+<div class="card-body">
+  <details open>
+    <summary><b>Show/hide</b></summary>
+    <table class="table">
+      {% include category-page/category-table-head.html %}
+      <tbody>
+      {% include category-page/category-row.html name="Bomb Launcher Capsules" damage="-1" knockback="0" ink_usage="0" rarity="Rainbow" internal_name="BombRush" image_uri="Specials/BombRush" %}
+      {% include category-page/category-row.html name="Tacticooler" damage="0" knockback="0" ink_usage="0" rarity="Rainbow" internal_name="Tacticooler" image_uri="Specials/Tacticooler" %}
+      {% include category-page/category-row.html name="Killer Wail" damage="50" knockback="1" ink_usage="0" rarity="Rainbow" internal_name="KillerWail" image_uri="Specials/KillerWail" %}
+      {% include category-page/category-row.html name="Ultra Stamp" damage="50" knockback="8" ink_usage="0" rarity="Rainbow" internal_name="UltraStamp" image_uri="Specials/UltraStamp" %}
+      {% include category-page/category-row.html name="Inkzooka" damage="120" knockback="8" ink_usage="0" rarity="Rainbow" internal_name="Inkzooka" image_uri="Specials/Inkzooka" %}
+      {% include category-page/category-row.html name="Trizooka" damage="150" knockback="10" ink_usage="0" rarity="Rainbow" internal_name="Trizooka" image_uri="Specials/Trizooka" %}
+      </tbody>
+    </table>
+  </details>
+</div>

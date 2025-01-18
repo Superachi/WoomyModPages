@@ -23,47 +23,6 @@ layout: default
   </div>
   <br>
 
-  <div class="card">
-    <div class="row">
-      <div class="col">
-        <div class="card-header">
-          <div class="col"><b>Items</b></div>
-        </div>
-
-        <div class="card-body">
-          <details>
-            <summary><b>Show/hide</b></summary>
-            <table class="table">
-              <tr class="tr-mod-items">
-                {% include item.html name="Shooters" image_uri="Shooters/Splattershot" %}
-                {% include item.html name="Rollers" image_uri="Rollers/SplatRoller" %}
-                {% include item.html name="Chargers" image_uri="Chargers/SplatCharger" %}
-              </tr>
-              <tr class="tr-mod-items">
-                {% include item.html name="Sloshers" image_uri="Sloshers/Slosher" %}
-                {% include item.html name="Splatlings" image_uri="Splatling/MiniSplatling" %}
-                {% include item.html name="Dualies" image_uri="Dualies/SplatDualie" %}
-              </tr>
-              <tr class="tr-mod-items">
-                {% include item.html name="Brellas" image_uri="Brellas/SplatBrella" %}
-                {% include item.html name="Blasters" image_uri="Blasters/Blaster" %}
-                {% include item.html name="Brushes" image_uri="Brushes/Inkbrush" %}
-              </tr>
-              <tr class="tr-mod-items">
-                {% include item.html name="Stringers" image_uri="Bows/TriStringer" %}
-                {% include item.html name="Splatanas" image_uri="Splatana/SplatanaWiper" %}
-                {% include item.html name="Sub weapons" image_uri="Throwing/SplatBomb" %}
-              </tr>
-              <tr class="tr-mod-items">
-                {% include item.html name="Special weapons" image_uri="Specials/Trizooka" %}
-              </tr>
-            </table>
-          </details>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  
+  {% include mod-item-nav-card.html %}
+  <br>
 </div>
-<br>
