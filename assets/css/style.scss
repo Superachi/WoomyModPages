@@ -74,19 +74,36 @@ h1 {
 	animation: gradient 30s ease infinite;
 }
 
-table, th, td {
+.tr-mod-items {
   border: 0px solid rgba(255, 255, 255, 0);
   border-collapse: collapse;
-  text-align: center;
-}
-
-.tr-mod-items {
-  font-weight: bold;
-  text-align: left;
-  vertical-align: middle;
-  height: 80px;
 }
 
 .tr-mod-items:nth-child(even) {
   --bs-table-bg: var(--bs-card-cap-bg);
+}
+
+.td-mod-item {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+$weapon-image-bg-color: #2a2a30;
+
+.weapon-image {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.image {
+  text-align: center;
+  background-color: $weapon-image-bg-color;
+  border: 10px solid $weapon-image-bg-color;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.weapon-text {
+  text-align: center;
 }

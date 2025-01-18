@@ -1,11 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
 <div class="container">
+
   <br>
   <div class="row">
     <div class="col">
@@ -13,9 +11,10 @@ layout: default
       <div class="my-text">
         Here you can find information about the WoomyMod, a <b>fan-made</b> mod for Terraria that adds Splatoon-related content to the game.<br>
         This is my first mod project and "website", so please bear with me :)<br>
-        This is a non-profit project, and is unaffiliated with Nintendo. Splatoon belongs to them.<br><br>
+        This is a non-profit project, and is <b>unaffiliated with Nintendo</b>. Splatoon belongs to them.<br><br>
     
         <b>Please note:</b> most of the information was generated via code in-game, so it may be incomplete or incorrect.
+        Also, unlike a regular wiki, <b>you can't make edits</b>, as this is a static site (using only HTML/CSS, there's no backend to save changes to).
       </div>
     </div>
     <div class="col">
@@ -25,77 +24,46 @@ layout: default
   <br>
 
   <div class="card">
-    <div class="row justify-content-center align-items-center g-2">
+    <div class="row">
       <div class="col">
         <div class="card-header">
           <div class="col"><b>Items</b></div>
-        </div class="card-body">
-          <table class="table">
-            <tr class="tr-mod-items">
-              <td>
-                <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Shooters/Splattershot.png" style="padding-right: 10px;">
-                Shooters
-              </td>
-              <td>
-                <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Rollers/SplatRoller.png" style="padding-right: 10px;">
-                Rollers
-              </td>
-              <td>
-                <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Chargers/SplatCharger.png" style="padding-right: 10px;">
-                Chargers
-              </td>
-            </tr>
-            <tr class="tr-mod-items">
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Sloshers/Slosher.png" style="padding-right: 10px;">
-              Sloshers
-              </td>
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Splatling/MiniSplatling.png" style="padding-right: 10px;">
-              Splatlings
-              </td>
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Dualies/SplatDualie.png" style="padding-right: 10px;">
-              Dualies
-              </td>
-            </tr>
-            <tr class="tr-mod-items">
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Brellas/SplatBrella.png" style="padding-right: 10px;">
-              Brellas
-              </td>
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Blasters/Blaster.png" style="padding-right: 10px;">
-              Blasters
-              </td>
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Brushes/Inkbrush.png" style="padding-right: 10px;">
-              Brushes
-              </td>
-            </tr>
-            <tr class="tr-mod-items">
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Bows/TriStringer.png" style="padding-right: 10px;">
-              Stringers
-              </td>
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Splatana/SplatanaWiper.png" style="padding-right: 10px;">
-              Splatanas
-              </td>
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Throwing/SplatBomb.png" style="padding-right: 10px;">
-              Sub weapons
-              </td>
-            </tr>
-            <tr class="tr-mod-items">
-              <td>
-              <img src="{{ site.baseurl }}/assets/images/Items/Weapons/Specials/Trizooka.png" style="padding-right: 10px;">
-              Special weapons
-              </td>
-            </tr>
-          </table>
+        </div>
+
+        <div class="card-body">
+          <details>
+            <summary><b>Show/hide</b></summary>
+            <table class="table">
+              <tr class="tr-mod-items">
+                {% include item.html name="Shooters" image_uri="Shooters/Splattershot" %}
+                {% include item.html name="Rollers" image_uri="Rollers/SplatRoller" %}
+                {% include item.html name="Chargers" image_uri="Chargers/SplatCharger" %}
+              </tr>
+              <tr class="tr-mod-items">
+                {% include item.html name="Sloshers" image_uri="Sloshers/Slosher" %}
+                {% include item.html name="Splatlings" image_uri="Splatling/MiniSplatling" %}
+                {% include item.html name="Dualies" image_uri="Dualies/SplatDualie" %}
+              </tr>
+              <tr class="tr-mod-items">
+                {% include item.html name="Brellas" image_uri="Brellas/SplatBrella" %}
+                {% include item.html name="Blasters" image_uri="Blasters/Blaster" %}
+                {% include item.html name="Brushes" image_uri="Brushes/Inkbrush" %}
+              </tr>
+              <tr class="tr-mod-items">
+                {% include item.html name="Stringers" image_uri="Bows/TriStringer" %}
+                {% include item.html name="Splatanas" image_uri="Splatana/SplatanaWiper" %}
+                {% include item.html name="Sub weapons" image_uri="Throwing/SplatBomb" %}
+              </tr>
+              <tr class="tr-mod-items">
+                {% include item.html name="Special weapons" image_uri="Specials/Trizooka" %}
+              </tr>
+            </table>
+          </details>
+        </div>
+
       </div>
     </div>
   </div>
+  
 </div>
 <br>
