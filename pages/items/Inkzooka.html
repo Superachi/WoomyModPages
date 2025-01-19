@@ -1,34 +1,17 @@
 ---
 ---
-<img src="{{ site.baseurl }}/assets/images/Items/Weapons/Specials/Inkzooka.png" class="mx-auto d-block">
 
-<a id="inkzooka"></a>
-### Inkzooka
-
-*Fire at will!*
-
-**Fires up to X ink tornados, passing through enemies and terrain.**
-<table class="table">
-  <tr>
-    <th>Category</th>
-    <td>Special weapon</td>
-  </tr>
-  <tr>
-    <th>Damage</th>
-    <td>120</td>
-  </tr>
-  <tr>
-    <th>Knockback</th>
-    <td>8</td>
-  </tr>
-  <tr>
-    <th>Value</th>
-    <td>5 gold </td>
-  </tr>
-  <tr>
-    <th>Rarity</th>
-    <td>Rainbow</td>
-  </tr>
-</table>
-
----
+{%
+  include weapon-details-page/stats.html
+  name="Inkzooka"
+  image_uri="Specials/Inkzooka"
+  category="Special weapon"
+  flavor_text="Fire at will!"
+  usage_hint="Fires up to X ink tornados, passing through enemies and terrain."
+  damage="120"
+  knockback="8"
+  velocity="0"
+  ink_usage="0"
+  value="5 gold "
+  rarity="-12"
+%}

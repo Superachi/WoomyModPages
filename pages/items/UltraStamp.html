@@ -1,41 +1,17 @@
 ---
 ---
-<img src="{{ site.baseurl }}/assets/images/Items/Weapons/Specials/UltraStamp.png" class="mx-auto d-block">
 
-<a id="ultra-stamp"></a>
-### Ultra Stamp
-
-*Ay, por dios, he's got hammerspace!!*
-
-**Reduces enemy damage while swinging, but forces forward momentum.**
-<table class="table">
-  <tr>
-    <th>Category</th>
-    <td>Special weapon</td>
-  </tr>
-  <tr>
-    <th>Damage</th>
-    <td>50</td>
-  </tr>
-  <tr>
-    <th>Knockback</th>
-    <td>8</td>
-  </tr>
-  <tr>
-    <th>Value</th>
-    <td>5 gold </td>
-  </tr>
-  <tr>
-    <th>Rarity</th>
-    <td>Rainbow</td>
-  </tr>
-</table>
-
-<b>Recipe</b>
-    <li>
-      1x <b><a href="./SheldonLicense">Basic Sheldon License</a></b>
-    </li>
-    <li>
-      20x <b><a href="https://terraria.wiki.gg/wiki/Bone">Bone</a></b>
-    </li>
----
+{%
+  include weapon-details-page/stats.html
+  name="Ultra Stamp"
+  image_uri="Specials/UltraStamp"
+  category="Special weapon"
+  flavor_text="Ay, por dios, he's got hammerspace!!"
+  usage_hint="Reduces enemy damage while swinging, but forces forward momentum."
+  damage="50"
+  knockback="8"
+  velocity="0"
+  ink_usage="0"
+  value="5 gold "
+  rarity="-12"
+%}
