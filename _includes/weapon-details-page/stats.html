@@ -5,11 +5,15 @@
       <div class="card-header text-center">
         <b>{{ include.name }}</b> ({{ include.category }})<br><br>
         <img class="image" src="{{ site.baseurl }}/assets/images/Items/Weapons/{{ include.image_uri }}.png" class="mx-auto d-block"><br><br>
-        <em>{{ include.flavor_text }}</em><br>
+        {% if include.flavor_text != "" %}
+          <em>{{ include.flavor_text }}</em><br>
+        {% endif %}
       </div>
 
       <div class="card-body text-center">
-        <b>Mechanic:</b> {{ include.usage_hint }}<br>
+        {% if include.usage_hint != "" %}
+          <b>Mechanic:</b> {{ include.usage_hint }}<br>
+        {% endif %}
       </div>
       
       <div class="card-body">
