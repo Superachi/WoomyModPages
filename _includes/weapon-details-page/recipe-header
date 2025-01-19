@@ -1,0 +1,6 @@
+      <li class="list-group-item">
+        <b>Recipe #{{ include.recipe_number }}</b>
+      </li>
+      <li class="list-group-item">
+        Crafting station > <b>{{ include.tile_name }}</b>
+      </li>

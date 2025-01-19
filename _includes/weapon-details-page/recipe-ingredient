@@ -1,0 +1,4 @@
+<li class="list-group-item">
+  <span class="badge badge-primary badge-pill">{{ include.amount }}</span>
+  <b><a href="{{ include.item_url }}">{{ include.item_name }}</a></b>
+</li>

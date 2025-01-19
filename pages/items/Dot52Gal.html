@@ -15,3 +15,54 @@
   value="8 gold "
   rarity="4"
 %}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      {%
+        include weapon-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="Anvils"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Silver Sheldon License"
+        item_url="./SheldonLicenseSilver"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="15"
+        item_name="Sparkle Slime Balloon"
+        item_url="https://terraria.wiki.gg/wiki/Sparkle_Slime_Balloon"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="5"
+        item_name="Pink Gel"
+        item_url="https://terraria.wiki.gg/wiki/Pink_Gel"
+      %}
+      <br>
+
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Loot from enemy</b>
+    </div>
+
+    <div class="card-body">
+      <li class="list-group-item">
+        <b><a href="./SheldonLicenseSilver">Zombie</a></b> (1%)
+      </li>
+    </div>
+  </div>
+</div>
