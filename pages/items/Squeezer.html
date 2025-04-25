@@ -1,0 +1,48 @@
+---
+---
+
+{%
+  include weapon-details-page/stats.html
+  name="Squeezer"
+  image_uri="Shooters/Squeezer"
+  category="Shooter"
+  flavor_text="Champagne showers!"
+  usage_hint="Fires differently depending on the distance of your cursor."
+  damage="56"
+  knockback="6"
+  velocity="9"
+  ink_usage="3"
+  value="30 gold "
+  rarity="Lime"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known crafting recipes.</i>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="Everscream"
+        source_url="https://terraria.wiki.gg/wiki/Everscream"
+        amount="1"
+        chance="10"
+      %}
+      
+    </div>
+  </div>
+</div>

@@ -8,12 +8,12 @@
   category="Splatling"
   flavor_text=""
   usage_hint="Hold left-click to charge up a barrage of shots (right-click to cancel)."
-  damage="64"
+  damage="58"
   knockback="6"
   velocity="16"
   ink_usage="32"
   value="20 gold "
-  rarity="7"
+  rarity="Lime"
 %}
 
 <br>
@@ -25,19 +25,24 @@
     </div>
 
     <div class="card-body">
-      There are no crafting recipes available.
+      ❌<i> There are no known crafting recipes.</i>
     </div>
   </div>
 
   <div class="card">
     <div class="card-header text-center">
-      <b>Loot from enemy</b>
+      <b>Looting from enemy/treasure bag</b>
     </div>
 
     <div class="card-body">
-      <li class="list-group-item">
-        <b><a href="./SheldonLicenseSilver">Zombie</a></b> (1%)
-      </li>
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="Santa-NK1"
+        source_url="https://terraria.wiki.gg/wiki/Santa-NK1"
+        amount="1"
+        chance="10"
+      %}
+      
     </div>
   </div>
 </div>

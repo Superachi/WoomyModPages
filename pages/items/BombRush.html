@@ -13,7 +13,7 @@
   velocity="0"
   ink_usage="0"
   value="5 gold "
-  rarity="-12"
+  rarity="Rainbow"
 %}
 
 <br>
@@ -25,19 +25,31 @@
     </div>
 
     <div class="card-body">
-      There are no crafting recipes available.
+      ❌<i> There are no known crafting recipes.</i>
     </div>
   </div>
 
   <div class="card">
     <div class="card-header text-center">
-      <b>Loot from enemy</b>
+      <b>Looting from enemy/treasure bag</b>
     </div>
 
     <div class="card-body">
-      <li class="list-group-item">
-        <b><a href="./SheldonLicenseSilver">Zombie</a></b> (1%)
-      </li>
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="Eater of Worlds"
+        source_url="https://terraria.wiki.gg/wiki/Eater_of_Worlds"
+        amount="1"
+        chance="100"
+      %}
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="Brain of Cthulhu"
+        source_url="https://terraria.wiki.gg/wiki/Brain_of_Cthulhu"
+        amount="1"
+        chance="100"
+      %}
+      
     </div>
   </div>
 </div>

@@ -7,13 +7,13 @@
   image_uri="Shooters/SlimeSplattershot"
   category="Shooter"
   flavor_text=""
-  usage_hint=""
-  damage="16"
+  usage_hint="Fires bouncing globs of ink."
+  damage="14"
   knockback="5"
   velocity="7"
   ink_usage="3"
   value="3 gold "
-  rarity="1"
+  rarity="Blue"
 %}
 
 <br>
@@ -25,19 +25,24 @@
     </div>
 
     <div class="card-body">
-      There are no crafting recipes available.
+      ❌<i> There are no known crafting recipes.</i>
     </div>
   </div>
 
   <div class="card">
     <div class="card-header text-center">
-      <b>Loot from enemy</b>
+      <b>Looting from enemy/treasure bag</b>
     </div>
 
     <div class="card-body">
-      <li class="list-group-item">
-        <b><a href="./SheldonLicenseSilver">Zombie</a></b> (1%)
-      </li>
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="King Slime"
+        source_url="https://terraria.wiki.gg/wiki/King_Slime"
+        amount="1"
+        chance="100"
+      %}
+      
     </div>
   </div>
 </div>

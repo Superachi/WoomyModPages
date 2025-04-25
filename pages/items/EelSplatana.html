@@ -1,0 +1,48 @@
+---
+---
+
+{%
+  include weapon-details-page/stats.html
+  name="Moray Claymore"
+  image_uri="Splatana/EelSplatana"
+  category="Splatana"
+  flavor_text="Say it with sizzle!"
+  usage_hint="When fully charged, this summons a whirling tornado that fires eels."
+  damage="200"
+  knockback="5"
+  velocity="0"
+  ink_usage="50"
+  value="50 gold "
+  rarity="Yellow"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known crafting recipes.</i>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="Duke Fishron"
+        source_url="https://terraria.wiki.gg/wiki/Duke_Fishron"
+        amount="1"
+        chance="100"
+      %}
+      
+    </div>
+  </div>
+</div>

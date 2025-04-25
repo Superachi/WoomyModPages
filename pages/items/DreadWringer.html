@@ -1,0 +1,66 @@
+---
+---
+
+{%
+  include weapon-details-page/stats.html
+  name="Dread Wringer"
+  image_uri="Sloshers/DreadWringer"
+  category="Slosher"
+  flavor_text="Curse of Slider..."
+  usage_hint="Sloshes an additional time."
+  damage="48"
+  knockback="6"
+  velocity="7.5"
+  ink_usage="9"
+  value="15 gold "
+  rarity="Light Purple"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      {%
+        include weapon-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="Anvils"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Silver Sheldon License"
+        item_url="./SheldonLicenseSilver"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="8"
+        item_name="Hallowed Bar"
+        item_url="https://terraria.wiki.gg/wiki/Hallowed_Bar"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="5"
+        item_name="Soul of Fright"
+        item_url="https://terraria.wiki.gg/wiki/Soul_of_Fright"
+      %}
+      <br>
+
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known drop locations.</i>
+    </div>
+  </div>
+</div>

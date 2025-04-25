@@ -8,12 +8,12 @@
   category="Dualies"
   flavor_text=""
   usage_hint="Has one dodge roll, but increased range when not rolling."
-  damage="36"
+  damage="40"
   knockback="2"
   velocity="10"
   ink_usage="0.7"
   value="20 gold "
-  rarity="7"
+  rarity="Lime"
 %}
 
 <br>
@@ -25,19 +25,24 @@
     </div>
 
     <div class="card-body">
-      There are no crafting recipes available.
+      ❌<i> There are no known crafting recipes.</i>
     </div>
   </div>
 
   <div class="card">
     <div class="card-header text-center">
-      <b>Loot from enemy</b>
+      <b>Looting from enemy/treasure bag</b>
     </div>
 
     <div class="card-body">
-      <li class="list-group-item">
-        <b><a href="./SheldonLicenseSilver">Zombie</a></b> (1%)
-      </li>
+            {%
+        include weapon-details-page/drop-table-index.html
+        source_name="Mourning Wood"
+        source_url="https://terraria.wiki.gg/wiki/Mourning_Wood"
+        amount="1"
+        chance="6.666667"
+      %}
+      
     </div>
   </div>
 </div>
