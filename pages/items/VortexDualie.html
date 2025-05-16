@@ -25,7 +25,20 @@
     </div>
 
     <div class="card-body">
-      ❌<i> There are no known crafting recipes.</i>
+      {%
+        include weapon-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="LunarCraftingStation"
+      %}
+      {%
+        include weapon-details-page/recipe-ingredient 
+        amount="18"
+        item_name="Vortex Fragment"
+        item_url="https://terraria.wiki.gg/wiki/Vortex_Fragment"
+      %}
+      <br>
+
+
     </div>
   </div>
 
