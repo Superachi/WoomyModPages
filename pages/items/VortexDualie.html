@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Interstellar Dualies"
   image_uri="Dualies/VortexDualie"
   category="Dualies"
   flavor_text="I can dance all day, try and hit me!"
+  tooltip_text=""
   usage_hint="Has X dodges. Instead of just rolling, you zip towards a given direction."
   damage="48"
   knockback="4"
@@ -26,12 +27,12 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="LunarCraftingStation"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="18"
         item_name="Vortex Fragment"
         item_url="https://terraria.wiki.gg/wiki/Vortex_Fragment"

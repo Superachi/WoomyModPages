@@ -1,0 +1,45 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Eye Laser Add-On"
+  image_uri="/LaserAddon"
+  category="Accessory"
+  flavor_text=""
+  tooltip_text="Your ink capacity is REDUCED by X% (multiplied after bonuses)."
+  usage_hint="Pearl Drone's sprinkler attack is replaced with lasers, which pierce enemies and fire faster."
+  value="5 gold "
+  rarity="Light Purple"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known crafting recipes.</i>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+            {%
+        include item-details-page/drop-table-index.html
+        source_name="Eyezor"
+        source_url="https://terraria.wiki.gg/wiki/Eyezor"
+        amount="1"
+        chance="25.0"
+      %}
+      
+    </div>
+  </div>
+</div>

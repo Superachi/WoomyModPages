@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Ultra Stamp"
   image_uri="Specials/UltraStamp"
   category="Special weapon"
   flavor_text="Ay, por dios, he's got hammerspace!!"
+  tooltip_text=""
   usage_hint="Reduces enemy damage while swinging, but forces forward momentum."
   damage="50"
   knockback="8"
@@ -25,26 +26,7 @@
     </div>
 
     <div class="card-body">
-      {%
-        include weapon-details-page/recipe-header 
-        recipe_number="1"
-        tile_name="Anvils"
-      %}
-      {%
-        include weapon-details-page/recipe-ingredient 
-        amount="1"
-        item_name="Basic Sheldon License"
-        item_url="./SheldonLicense"
-      %}
-      {%
-        include weapon-details-page/recipe-ingredient 
-        amount="30"
-        item_name="Bone"
-        item_url="https://terraria.wiki.gg/wiki/Bone"
-      %}
-      <br>
-
-
+      ❌<i> There are no known crafting recipes.</i>
     </div>
   </div>
 

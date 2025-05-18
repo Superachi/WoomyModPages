@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Spark Brella"
   image_uri="Brellas/MartianBrella"
   category="Brella"
   flavor_text=""
+  tooltip_text=""
   usage_hint="When the shield takes damage, it fires off a large lightning bolt."
   damage="46"
   knockback="6"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Martian Saucer"
         source_url="https://terraria.wiki.gg/wiki/Martian_Saucer"
         amount="1"

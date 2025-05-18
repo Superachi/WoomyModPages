@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Tri-Slosher"
   image_uri="Sloshers/TriSlosher"
   category="Slosher"
   flavor_text="It just takes no skill!"
+  tooltip_text=""
   usage_hint="Slings globs of ink that covers a wide area."
   damage="22"
   knockback="5"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Basic Sheldon License"
         item_url="./SheldonLicense"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Bee Wax"
         item_url="https://terraria.wiki.gg/wiki/Bee_Wax"

@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Mini Splatling"
   image_uri="Splatling/MiniSplatling"
   category="Splatling"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a barrage of shots (right-click to cancel)."
   damage="11"
   knockback="1.5"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Basic Sheldon License"
         item_url="./SheldonLicense"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Meteorite Bar"
         item_url="https://terraria.wiki.gg/wiki/Meteorite_Bar"

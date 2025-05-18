@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Ancient Splattershot"
   image_uri="Shooters/ClassicSplattershotS1"
   category="Shooter"
   flavor_text="Stay fresh!"
+  tooltip_text=""
   usage_hint=""
   damage="32"
   knockback="4"
@@ -26,36 +27,36 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Tentatek Splattershot"
         item_url="./TentatekSplattershot"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Hallowed Bar"
         item_url="https://terraria.wiki.gg/wiki/Hallowed_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Orange Dye"
         item_url="https://terraria.wiki.gg/wiki/Orange_Dye"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Blue Dye"
         item_url="https://terraria.wiki.gg/wiki/Blue_Dye"

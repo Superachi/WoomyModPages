@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="S-BLAST '91"
   image_uri="Blasters/SBlast91"
   category="Blaster"
   flavor_text="Okay trust me, THIS will take over the meta!"
+  tooltip_text=""
   usage_hint="If grounded/not moving, increase damage and range, but reduce blast radius."
   damage="200"
   knockback="7"
@@ -26,24 +27,24 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="10"
         item_name="Ectoplasm"
         item_url="https://terraria.wiki.gg/wiki/Ectoplasm"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="30"
         item_name="Bone"
         item_url="https://terraria.wiki.gg/wiki/Bone"

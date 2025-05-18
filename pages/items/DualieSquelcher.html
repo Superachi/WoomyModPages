@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Dualie Squelchers"
   image_uri="Dualies/DualieSquelcher"
   category="Dualies"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Has no increased damage after rolling, but also no movement penalty."
   damage="28"
   knockback="3"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="None required"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Chlorophyte Bar"
         item_url="https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Jet Squelcher"
         item_url="./JetSquelcher"

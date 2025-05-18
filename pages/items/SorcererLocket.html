@@ -1,0 +1,57 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Enchanted Locket"
+  image_uri="/SorcererLocket"
+  category="Accessory"
+  flavor_text=""
+  tooltip_text="X% increased magic damage."
+  usage_hint="Your magic damage bonuses apply to all ink-based weapons."
+  value="5 gold "
+  rarity="Pink"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      {%
+        include item-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="TinkerersWorkbench"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Inkdrop Locket"
+        item_url="./DropletLocket"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Sorcerer Emblem"
+        item_url="https://terraria.wiki.gg/wiki/Sorcerer_Emblem"
+      %}
+      <br>
+
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known drop locations.</i>
+    </div>
+  </div>
+</div>

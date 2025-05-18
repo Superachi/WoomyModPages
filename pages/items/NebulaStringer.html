@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Star-Touched Stringer"
   image_uri="Bows/NebulaStringer"
   category="Stringer"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a volley of homing stars."
   damage="220"
   knockback="3"
@@ -26,12 +27,12 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="LunarCraftingStation"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="18"
         item_name="Nebula Fragment"
         item_url="https://terraria.wiki.gg/wiki/Nebula_Fragment"

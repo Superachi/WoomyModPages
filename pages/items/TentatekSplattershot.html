@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Tentatek Splattershot"
   image_uri="Shooters/TentatekSplattershot"
   category="Shooter"
   flavor_text="For the division!"
+  tooltip_text=""
   usage_hint=""
   damage="24"
   knockback="3"
@@ -26,30 +27,30 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Splattershot"
         item_url="./Splattershot"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Soul of Light"
         item_url="https://terraria.wiki.gg/wiki/Soul_of_Light"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="10"
         item_name="Crystal Shard"
         item_url="https://terraria.wiki.gg/wiki/Crystal_Shard"

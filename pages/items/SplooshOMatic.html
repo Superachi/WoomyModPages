@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Sploosh-O-Matic"
   image_uri="Shooters/SplooshOMatic"
   category="Shooter"
   flavor_text="Rats, we're rats. We're the rats."
+  tooltip_text=""
   usage_hint=""
   damage="18"
   knockback="5"
@@ -26,12 +27,12 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"

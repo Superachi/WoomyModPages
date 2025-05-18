@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Tacticooler"
   image_uri="Specials/Tacticooler"
   category="Special weapon"
   flavor_text="Meta defining!"
+  tooltip_text=""
   usage_hint="Deploys a drink dispenser that grants a buff to you and other players."
   damage="0"
   knockback="0"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Wall of Flesh"
         source_url="https://terraria.wiki.gg/wiki/Wall_of_Flesh"
         amount="1"

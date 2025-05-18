@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Custom Hydra Splatling"
   image_uri="Splatling/CustomHydraSplatling"
   category="Splatling"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a barrage of shots (right-click to cancel)."
   damage="58"
   knockback="6"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Santa-NK1"
         source_url="https://terraria.wiki.gg/wiki/Santa-NK1"
         amount="1"

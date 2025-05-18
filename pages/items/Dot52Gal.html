@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name=".52 Gal"
   image_uri="Shooters/Dot52Gal"
   category="Shooter"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Always hits for X ranged damage, ignoring damage bonuses and enemy defense."
   damage="52"
   knockback="6"
@@ -26,24 +27,24 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="15"
         item_name="Sparkle Slime Balloon"
         item_url="https://terraria.wiki.gg/wiki/Sparkle_Slime_Balloon"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Pink Gel"
         item_url="https://terraria.wiki.gg/wiki/Pink_Gel"

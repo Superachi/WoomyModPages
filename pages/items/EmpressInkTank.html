@@ -1,0 +1,45 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Chromatic Ink Tank"
+  image_uri="InkTanks/EmpressInkTank"
+  category="Accessory"
+  flavor_text="My turn!"
+  tooltip_text="+X% ink capacity."
+  usage_hint="Whenever you deal critical damage, an additional homing projectile is created."
+  value="20 gold "
+  rarity="Cyan"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known crafting recipes.</i>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+            {%
+        include item-details-page/drop-table-index.html
+        source_name="Empress of Light"
+        source_url="https://terraria.wiki.gg/wiki/Empress_of_Light"
+        amount="1"
+        chance="50.0"
+      %}
+      
+    </div>
+  </div>
+</div>

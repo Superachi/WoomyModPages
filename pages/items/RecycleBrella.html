@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Recycled Brella 24 Mk I"
   image_uri="Brellas/RecycleBrella"
   category="Brella"
   flavor_text="When a Bamboozler and Brella love each other very much..."
+  tooltip_text="Fires X ink pellets."
   usage_hint="The shield is weak, but recovers quickly."
   damage="24"
   knockback="4"
@@ -26,36 +27,36 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Bamboozler 14 Mk I"
         item_url="./BambooMk1Charger"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Splat Brella"
         item_url="./SplatBrella"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Soul of Light"
         item_url="https://terraria.wiki.gg/wiki/Soul_of_Light"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Soul of Night"
         item_url="https://terraria.wiki.gg/wiki/Soul_of_Night"

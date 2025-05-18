@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Octobrush Nouveau"
   image_uri="Brushes/OctobrushNouveau"
   category="Brush"
   flavor_text=""
+  tooltip_text="Ignores X points of enemy Defense."
   usage_hint="Hold right-click while attacking to gain a speed boost."
   damage="26"
   knockback="6"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="7"
         item_name="Mythril Bar"
         item_url="https://terraria.wiki.gg/wiki/Mythril_Bar"

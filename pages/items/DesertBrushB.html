@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Mirage Duster"
   image_uri="Brushes/DesertBrushB"
   category="Brush"
   flavor_text=""
+  tooltip_text="Ignores X points of enemy Defense."
   usage_hint="Fires piercing wind slashes."
   damage="30"
   knockback="1"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="None required"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Chlorophyte Bar"
         item_url="https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Desert Duster"
         item_url="./DesertBrush"

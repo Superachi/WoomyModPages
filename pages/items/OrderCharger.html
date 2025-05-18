@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Order Charger"
   image_uri="Chargers/OrderCharger"
   category="Charger"
   flavor_text="Humble beginnings."
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a piercing shot."
   damage="28"
   knockback="4"
@@ -26,24 +27,24 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Silver Bar"
         item_url="https://terraria.wiki.gg/wiki/Silver_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
-        amount="15"
-        item_name="Gel"
-        item_url="https://terraria.wiki.gg/wiki/Gel"
+        include item-details-page/recipe-ingredient 
+        amount="5"
+        item_name="Drop of Black Ink"
+        item_url="./InkDroplet"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Amethyst"
         item_url="https://terraria.wiki.gg/wiki/Amethyst"
@@ -51,24 +52,24 @@
       <br>
 
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="2"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Tungsten Bar"
         item_url="https://terraria.wiki.gg/wiki/Tungsten_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
-        amount="15"
-        item_name="Gel"
-        item_url="https://terraria.wiki.gg/wiki/Gel"
+        include item-details-page/recipe-ingredient 
+        amount="5"
+        item_name="Drop of Black Ink"
+        item_url="./InkDroplet"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Amethyst"
         item_url="https://terraria.wiki.gg/wiki/Amethyst"

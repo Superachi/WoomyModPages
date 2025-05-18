@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Splatana Stamper"
   image_uri="Splatana/SplatanaStamper"
   category="Splatana"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a ranged, piercing slash."
   damage="125"
   knockback="5"
@@ -26,24 +27,24 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Hallowed Bar"
         item_url="https://terraria.wiki.gg/wiki/Hallowed_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Soul of Might"
         item_url="https://terraria.wiki.gg/wiki/Soul_of_Might"

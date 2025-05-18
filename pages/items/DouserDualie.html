@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Douser Dualies FF"
   image_uri="Dualies/DouserDualie"
   category="Dualies"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Has one dodge roll, but increased range when not rolling."
   damage="26"
   knockback="2"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Titanium Bar"
         item_url="https://terraria.wiki.gg/wiki/Titanium_Bar"

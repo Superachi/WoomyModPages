@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Zephyr Blade"
   image_uri="Splatana/SkySplatana"
   category="Splatana"
   flavor_text=""
+  tooltip_text=""
   usage_hint="When fully charged, you perform a large slash around you."
   damage="54"
   knockback="4"
@@ -26,36 +27,36 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="None required"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Fallen Star"
         item_url="https://terraria.wiki.gg/wiki/Fallen_Star"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Topaz"
         item_url="https://terraria.wiki.gg/wiki/Topaz"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Feather"
         item_url="https://terraria.wiki.gg/wiki/Feather"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Meteorite Bar"
         item_url="https://terraria.wiki.gg/wiki/Meteorite_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Hellstone"
         item_url="https://terraria.wiki.gg/wiki/Hellstone"

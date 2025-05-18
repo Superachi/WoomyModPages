@@ -2,16 +2,17 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Inkbrush"
   image_uri="Brushes/Inkbrush"
   category="Brush"
   flavor_text="I can brush the base all by myself!"
+  tooltip_text="Ignores X points of enemy Defense."
   usage_hint="Hold right-click while attacking to gain a speed boost."
   damage="6"
   knockback="4"
   velocity="6"
-  ink_usage="1"
+  ink_usage="2"
   value="3 gold "
   rarity="Green"
 %}
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Basic Sheldon License"
         item_url="./SheldonLicense"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Meteorite Bar"
         item_url="https://terraria.wiki.gg/wiki/Meteorite_Bar"

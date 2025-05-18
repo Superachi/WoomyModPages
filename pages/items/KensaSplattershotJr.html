@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Kensa Splattershot Jr."
   image_uri="Shooters/KensaSplattershotJr"
   category="Shooter"
   flavor_text=""
+  tooltip_text=""
   usage_hint="+X% ink capacity while equipped."
   damage="36"
   knockback="4"
@@ -26,12 +27,12 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Golden Sheldon License"
         item_url="./SheldonLicenseGold"

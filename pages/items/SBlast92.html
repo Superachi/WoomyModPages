@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="S-BLAST '92"
   image_uri="Blasters/SBlast92"
   category="Blaster"
   flavor_text="This will take over the meta!"
+  tooltip_text=""
   usage_hint="If grounded/not moving, increase damage and range, but reduce blast radius."
   damage="160"
   knockback="7"
@@ -26,24 +27,24 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Silver Sheldon License"
         item_url="./SheldonLicenseSilver"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Hallowed Bar"
         item_url="https://terraria.wiki.gg/wiki/Hallowed_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Soul of Sight"
         item_url="https://terraria.wiki.gg/wiki/Soul_of_Sight"

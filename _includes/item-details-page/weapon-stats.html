@@ -1,0 +1,56 @@
+<br>
+<div class="card">
+  <div class="row">
+    <div class="col">
+      <div class="card-header text-center">
+        <b>{{ include.name }}</b> ({{ include.category }})<br><br>
+        <img class="image" src="{{ site.baseurl }}/assets/images/Items/Weapons/{{ include.image_uri }}.png" class="mx-auto d-block"><br><br>
+        {% if include.flavor_text != "" %}
+          <em>{{ include.flavor_text }}</em><br>
+        {% endif %}
+      </div>
+
+      <div class="card-body text-center">
+        {% if include.tooltip_text != "" %}
+          <b>Tooltip:</b> {{ include.tooltip_text }}<br>
+        {% endif %}
+        {% if include.usage_hint != "" %}
+          <b>Mechanic:</b> {{ include.usage_hint }}<br>
+        {% endif %}
+      </div>
+      
+      <div class="card-body">
+        <table class="table">
+          <tr class="tr-mod-items">
+            <th>Category</th>
+            <td>{{ include.category }}</td>
+          </tr>
+          <tr class="tr-mod-items">
+            <th>Damage</th>
+            <td>{{ include.damage }}</td>
+          </tr>
+          <tr class="tr-mod-items">
+            <th>Knockback</th>
+            <td>{{ include.knockback }}</td>
+          </tr>
+          <tr class="tr-mod-items">
+            <th>Velocity</th>
+            <td>{{ include.velocity }}</td>
+          </tr>
+          <tr class="tr-mod-items">
+            <th>Ink usage</th>
+            <td>{{ include.ink_usage }}%</td>
+          </tr>
+          <tr class="tr-mod-items">
+            <th>Value</th>
+            <td>{{ include.value }}</td>
+          </tr>
+          <tr class="tr-mod-items">
+            <th>Rarity</th>
+            <td>{{ include.rarity }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

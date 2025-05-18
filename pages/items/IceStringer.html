@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Shivering Stringer"
   image_uri="Bows/IceStringer"
   category="Stringer"
   flavor_text="Don't lick it!"
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a piercing shot that releases icy shrapnel."
   damage="200"
   knockback="8"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Ice Queen"
         source_url="https://terraria.wiki.gg/wiki/Ice_Queen"
         amount="1"

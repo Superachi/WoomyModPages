@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Explosher"
   image_uri="Sloshers/Explosher"
   category="Slosher"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Slings a piercing projectile that explodes when hitting a wall."
   damage="240"
   knockback="8"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Santa-NK1"
         source_url="https://terraria.wiki.gg/wiki/Santa-NK1"
         amount="1"

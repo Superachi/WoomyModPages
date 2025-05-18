@@ -1,0 +1,63 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Digital Palette"
+  image_uri="Palettes/SuperPalette"
+  category="Accessory"
+  flavor_text=""
+  tooltip_text=""
+  usage_hint=""
+  value="20 gold "
+  rarity="Red"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      {%
+        include item-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="None required"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="L-Type Motion Stick"
+        item_url="./SuperPaletteLeftPart"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="R-Type Camera Stick"
+        item_url="./SuperPaletteRightPart"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Light-Emitting Display"
+        item_url="./SuperPaletteMiddlePart"
+      %}
+      <br>
+
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known drop locations.</i>
+    </div>
+  </div>
+</div>

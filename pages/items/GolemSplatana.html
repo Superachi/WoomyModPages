@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Sun Cleaver"
   image_uri="Splatana/GolemSplatana"
   category="Splatana"
   flavor_text="M.C. Princess Was Her?"
+  tooltip_text=""
   usage_hint="When fully charged, you unleash a massive fiery slash around you."
   damage="240"
   knockback="5"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Golem"
         source_url="https://terraria.wiki.gg/wiki/Golem"
         amount="1"

@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Splat Brella"
   image_uri="Brellas/SplatBrella"
   category="Brella"
   flavor_text="You deserve some time in the sun again."
+  tooltip_text="Fires X ink pellets."
   usage_hint="The brella protects you while you attack (until it breaks!)."
   damage="12"
   knockback="2"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Basic Sheldon License"
         item_url="./SheldonLicense"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Bee Wax"
         item_url="https://terraria.wiki.gg/wiki/Bee_Wax"

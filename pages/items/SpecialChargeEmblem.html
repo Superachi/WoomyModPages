@@ -1,0 +1,45 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Special Charge Emblem"
+  image_uri="Emblems/SpecialChargeEmblem"
+  category="Accessory"
+  flavor_text=""
+  tooltip_text="X% increased special weapon charge up rate."
+  usage_hint=""
+  value="3 gold "
+  rarity="Light Red"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known crafting recipes.</i>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+            {%
+        include item-details-page/drop-table-index.html
+        source_name="Wall of Flesh"
+        source_url="https://terraria.wiki.gg/wiki/Wall_of_Flesh"
+        amount="1"
+        chance="100.0"
+      %}
+      
+    </div>
+  </div>
+</div>

@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Gloop Shot"
   image_uri="Shooters/SlimeSplattershot"
   category="Shooter"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Fires bouncing globs of ink."
   damage="14"
   knockback="5"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="King Slime"
         source_url="https://terraria.wiki.gg/wiki/King_Slime"
         amount="1"

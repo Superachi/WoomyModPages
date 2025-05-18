@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Starfish Sniper"
   image_uri="Chargers/StarfishedCharger"
   category="Charger"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Fully charged shots cause a blast after a short delay."
   damage="120"
   knockback="5"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Empress of Light"
         source_url="https://terraria.wiki.gg/wiki/Empress_of_Light"
         amount="1"

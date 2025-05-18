@@ -2,13 +2,14 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="REEF-LUX 450"
   image_uri="Bows/ReefluxStringer"
   category="Stringer"
   flavor_text=""
+  tooltip_text=""
   usage_hint="Hold left-click to charge up a volley of shots."
-  damage="18"
+  damage="16"
   knockback="1.5"
   velocity="0"
   ink_usage="7"
@@ -26,12 +27,12 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Basic Sheldon License"
         item_url="./SheldonLicense"

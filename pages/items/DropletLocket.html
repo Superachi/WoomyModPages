@@ -1,0 +1,63 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Inkdrop Locket"
+  image_uri="/DropletLocket"
+  category="Accessory"
+  flavor_text=""
+  tooltip_text="X% increased magic damage."
+  usage_hint="Your magic damage bonuses apply to all ink-based weapons."
+  value="1 gold "
+  rarity="Green"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      {%
+        include item-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="None required"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="10"
+        item_name="Drop of Black Ink"
+        item_url="./InkDroplet"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Mana Crystal"
+        item_url="https://terraria.wiki.gg/wiki/Mana_Crystal"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="White String"
+        item_url="https://terraria.wiki.gg/wiki/White_String"
+      %}
+      <br>
+
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known drop locations.</i>
+    </div>
+  </div>
+</div>

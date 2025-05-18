@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Bomb Launcher Capsules"
   image_uri="Specials/BombRush"
   category="Special weapon"
   flavor_text="Also inspires Pearl Drone."
+  tooltip_text=""
   usage_hint="Temporarily, your sub weapons cost no ink and deal X% more damage (multiplied after bonuses)."
   damage="-1"
   knockback="0"
@@ -36,14 +37,14 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Eater of Worlds"
         source_url="https://terraria.wiki.gg/wiki/Eater_of_Worlds"
         amount="1"
         chance="100.0"
       %}
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Brain of Cthulhu"
         source_url="https://terraria.wiki.gg/wiki/Brain_of_Cthulhu"
         amount="1"

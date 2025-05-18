@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Trizooka"
   image_uri="Specials/Trizooka"
   category="Special weapon"
   flavor_text="Go ahead, try and react to it."
+  tooltip_text=""
   usage_hint="Fires X explosive shots, X times."
   damage="150"
   knockback="10"
@@ -36,7 +37,7 @@
 
     <div class="card-body">
             {%
-        include weapon-details-page/drop-table-index.html
+        include item-details-page/drop-table-index.html
         source_name="Skeletron"
         source_url="https://terraria.wiki.gg/wiki/Skeletron"
         amount="1"

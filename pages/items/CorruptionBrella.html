@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Plague Brella"
   image_uri="Brellas/CorruptionBrella"
   category="Brella"
   flavor_text=""
+  tooltip_text="Fires X ink pellets."
   usage_hint="Inflicts venom on enemies. Can hit in melee even when broken."
   damage="5"
   knockback="9"
@@ -26,36 +27,36 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="None required"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Umbrella"
         item_url="https://terraria.wiki.gg/wiki/Umbrella"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="15"
         item_name="Shadow Scale"
         item_url="https://terraria.wiki.gg/wiki/Shadow_Scale"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="30"
         item_name="Obsidian"
         item_url="https://terraria.wiki.gg/wiki/Obsidian"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="5"
         item_name="Stinger"
         item_url="https://terraria.wiki.gg/wiki/Stinger"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Lens"
         item_url="https://terraria.wiki.gg/wiki/Lens"

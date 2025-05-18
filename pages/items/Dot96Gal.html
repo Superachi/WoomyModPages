@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name=".96 Gal"
   image_uri="Shooters/Dot96Gal"
   category="Shooter"
   flavor_text="96 unresisted damage was a bit too much."
+  tooltip_text=""
   usage_hint="Always hits for X ranged damage, ignoring damage bonuses and enemy defense."
   damage="68"
   knockback="8"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="None required"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Chlorophyte Bar"
         item_url="https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name=".52 Gal"
         item_url="./Dot52Gal"

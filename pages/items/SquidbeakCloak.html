@@ -1,0 +1,62 @@
+---
+---
+
+{%
+  include item-details-page/accessory-stats.html
+  name="Hero Cloak"
+  image_uri="Emblems/SquidbeakCloak"
+  category="Accessory"
+  flavor_text="The Octarians are coming!"
+  tooltip_text="X% increased sub weapon damage
+X% increased special weapon damage
+X% increased special weapon charge up rate
+Your main weapons cost X% less ink
+Your sub weapons cost X% less ink
+Activates Last-Ditch Effort when at low life."
+  usage_hint=""
+  value="15 gold "
+  rarity="Lime"
+%}
+
+<br>
+<h1 style="text-align: center;">How to obtain</h1>
+<div class="card-group">
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Crafting</b>
+    </div>
+
+    <div class="card-body">
+      {%
+        include item-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="TinkerersWorkbench"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Cloak of the Inner Agent"
+        item_url="./AgentCloak"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Ink Thrifting Emblem"
+        item_url="./SuperSaverEmblem"
+      %}
+      <br>
+
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <b>Looting from enemy/treasure bag</b>
+    </div>
+
+    <div class="card-body">
+      ❌<i> There are no known drop locations.</i>
+    </div>
+  </div>
+</div>

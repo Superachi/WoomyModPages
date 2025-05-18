@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Splat Dualies"
   image_uri="Dualies/SplatDualie"
   category="Dualies"
   flavor_text="Inkoming!"
+  tooltip_text=""
   usage_hint="Right-click while attacking to dodge roll. Stand still afterwards for a stronger attack."
   damage="11"
   knockback="1"
@@ -26,18 +27,18 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Basic Sheldon License"
         item_url="./SheldonLicense"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="30"
         item_name="Bone"
         item_url="https://terraria.wiki.gg/wiki/Bone"

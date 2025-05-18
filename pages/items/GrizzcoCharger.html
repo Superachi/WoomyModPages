@@ -2,11 +2,12 @@
 ---
 
 {%
-  include weapon-details-page/stats.html
+  include item-details-page/weapon-stats.html
   name="Grizzco Charger"
   image_uri="Chargers/GrizzcoCharger"
   category="Charger"
   flavor_text="If that doesn't make you Eggsecutive VP material, I don't know what does!"
+  tooltip_text=""
   usage_hint="Instantly charges."
   damage="140"
   knockback="0"
@@ -26,30 +27,30 @@
 
     <div class="card-body">
       {%
-        include weapon-details-page/recipe-header 
+        include item-details-page/recipe-header 
         recipe_number="1"
         tile_name="Anvils"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Golden Sheldon License"
         item_url="./SheldonLicenseGold"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="8"
         item_name="Shroomite Bar"
         item_url="https://terraria.wiki.gg/wiki/Shroomite_Bar"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Illegal Gun Parts"
         item_url="https://terraria.wiki.gg/wiki/Illegal_Gun_Parts"
       %}
       {%
-        include weapon-details-page/recipe-ingredient 
+        include item-details-page/recipe-ingredient 
         amount="1"
         item_name="Bamboozler 14 Mk I"
         item_url="./BambooMk1Charger"
