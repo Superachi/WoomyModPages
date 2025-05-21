@@ -9,8 +9,8 @@
   flavor_text=""
   tooltip_text=""
   usage_hint=""
-  value="1 gold "
-  rarity="Light Red"
+  value="12 gold 50 silver "
+  rarity="Green"
 %}
 
 <br>
@@ -45,7 +45,21 @@
     </div>
 
     <div class="card-body">
-      ❌<i> There are no known drop locations.</i>
+            {%
+        include item-details-page/drop-table-index.html
+        source_name="Eater of Worlds"
+        source_url="https://terraria.wiki.gg/wiki/Eater_of_Worlds"
+        amount="1"
+        chance="100.0"
+      %}
+            {%
+        include item-details-page/drop-table-index.html
+        source_name="Brain of Cthulhu"
+        source_url="https://terraria.wiki.gg/wiki/Brain_of_Cthulhu"
+        amount="1"
+        chance="100.0"
+      %}
+      
     </div>
   </div>
 </div>
