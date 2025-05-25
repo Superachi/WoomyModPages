@@ -9,12 +9,12 @@
   flavor_text="I barely know her!"
   tooltip_text=""
   usage_hint="Slings globs of ink that covers a wide area."
-  damage="20"
+  damage="22"
   knockback="6"
   velocity="8"
   ink_usage="7.5"
-  value="12 gold 50 silver "
-  rarity="Green"
+  value="7 gold 50 silver "
+  rarity="Blue"
 %}
 
 <br>
@@ -40,8 +40,27 @@
       {%
         include item-details-page/recipe-ingredient 
         amount="8"
-        item_name="Meteorite Bar"
-        item_url="https://terraria.wiki.gg/wiki/Meteorite_Bar"
+        item_name="Demonite Bar"
+        item_url="https://terraria.wiki.gg/wiki/Demonite_Bar"
+      %}
+      <br>
+
+      {%
+        include item-details-page/recipe-header 
+        recipe_number="2"
+        tile_name="Anvils"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Basic Sheldon License"
+        item_url="./SheldonLicense"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="8"
+        item_name="Crimtane Bar"
+        item_url="https://terraria.wiki.gg/wiki/Crimtane_Bar"
       %}
       <br>
 

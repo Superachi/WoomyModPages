@@ -13,7 +13,7 @@
   knockback="5"
   velocity="7"
   ink_usage="3"
-  value="10 gold "
+  value="7 gold 50 silver "
   rarity="Blue"
 %}
 
@@ -26,7 +26,32 @@
     </div>
 
     <div class="card-body">
-      ❌<i> There are no known crafting recipes.</i>
+      {%
+        include item-details-page/recipe-header 
+        recipe_number="1"
+        tile_name="None required"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="99"
+        item_name="Gel"
+        item_url="https://terraria.wiki.gg/wiki/Gel"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="1"
+        item_name="Water Gun"
+        item_url="https://terraria.wiki.gg/wiki/Water_Gun"
+      %}
+      {%
+        include item-details-page/recipe-ingredient 
+        amount="5"
+        item_name="Drop of Black Ink"
+        item_url="./InkDroplet"
+      %}
+      <br>
+
+
     </div>
   </div>
 
